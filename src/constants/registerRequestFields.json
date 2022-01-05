@@ -1,0 +1,81 @@
+[
+  {
+    "name": "salutation",
+    "type": "text",
+    "label": "Salutation",
+    "placeholder": "salutation",
+    "rules": [
+      {
+        "validationType": "required"
+      },
+      {
+        "validationType": "range",
+        "allowedValues": [
+          "Mr",
+          "Mrs",
+          "Ms",
+          "Dr"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "firstName",
+    "type": "text",
+    "label": "First Name",
+    "placeholder": "John",
+    "rules": [
+      {
+        "validationType": "required"
+      },
+      {
+        "validationType": "maxString",
+        "length": 200
+      }
+    ]
+  },
+  {
+    "name": "lastName",
+    "type": "text",
+    "label": "Last Name",
+    "placeholder": "Doe",
+    "rules": [
+      {
+        "validationType": "required"
+      },
+      {
+        "validationType": "maxString",
+        "length": 200
+      }
+    ]
+  },
+  {
+    "name": "email",
+    "type": "text",
+    "label": "Email",
+    "placeholder": "john@example.com",
+    "rules": [
+      {
+        "validationType": "required"
+      },
+      {
+        "validationType": "email"
+      },
+      {
+        "validationType": "maxString",
+        "length": 200
+      }
+    ]
+  },
+  {
+    "name": "password",
+    "type": "text",
+    "label": "Password",
+    "placeholder": "Password",
+    "rules": [
+      {
+        "validationType": "required"
+      }
+    ]
+  }
+]
